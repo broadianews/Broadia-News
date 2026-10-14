@@ -1,1 +1,305 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BROADIA NEWS — Broadcasting Media. International, national and regional news.">
+<title>BROADIA NEWS | Broadcasting Media</title>
+<style>
+:root {
+  --red: #c91f2c;
+  --gold: #c9a45c;
+  --dark: #111318;
+  --muted: #686d75;
+  --line: #e6e6e6;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #202126;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--red); }
+.wrap { width: min(1120px, 92%); margin: auto; }
+.top {
+  background: var(--dark);
+  color: #ddd;
+  padding: 7px 0;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 0;
+}
+.logo {
+  background: var(--dark);
+  color: white;
+  border-bottom: 4px solid var(--red);
+  padding: 7px 12px;
+  font-size: 28px;
+  font-weight: 900;
+}
+h1, h2, h3, p { margin-top: 0; }
+.brand { font-size: 25px; font-weight: 900; }
+.brand em { color: var(--red); font-style: normal; }
+.tagline {
+  color: #9b7a3f;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+nav { background: var(--dark); color: white; }
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.navlinks a {
+  display: block;
+  padding: 13px 14px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.navlinks a:hover { background: var(--red); color: white; }
+.breaking {
+  margin: 22px 0;
+  background: #f3f3f3;
+  padding: 12px;
+  font-size: 13px;
+}
+.breaking strong {
+  background: var(--red);
+  color: white;
+  padding: 7px 10px;
+  margin-right: 9px;
+  font-size: 11px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 30px;
+}
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.category {
+  color: var(--red);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.hero h1 {
+  font-size: clamp(28px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 10px 0;
+}
+.muted { color: var(--muted); font-size: 14px; }
+.side {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.side h3 { margin: 6px 0; }
+.section { margin: 45px 0; }
+.section-title {
+  border-bottom: 2px solid var(--dark);
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border: 1px solid var(--line);
+  padding-bottom: 16px;
+}
+.card img { width: 100%; height: 175px; object-fit: cover; }
+.card h3, .card p, .card .category { margin-left: 15px; margin-right: 15px; }
+.card h3 { margin-top: 10px; }
+.sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.tile {
+  border: 1px solid var(--line);
+  padding: 20px;
+  min-height: 110px;
+}
+.tile strong { display: block; font-size: 17px; }
+.tile span { color: var(--muted); font-size: 12px; }
+.editorial {
+  background: #f5f2eb;
+  border-left: 4px solid var(--gold);
+  padding: 24px;
+  margin: 45px 0;
+}
+footer {
+  background: var(--dark);
+  color: #ddd;
+  padding: 30px 0;
+  font-size: 12px;
+}
+footer a { margin-right: 18px; }
+footer .brand { color: white; }
+@media(max-width:700px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero img { height: 230px; }
+  .cards { grid-template-columns: 1fr; }
+  .sections { grid-template-columns: repeat(2, 1fr); }
+  .navlinks a { padding: 10px; }
+  .brand { font-size: 21px; }
+  .card img { height: 200px; }
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">INDEPENDENT DIGITAL NEWS ·
+    <span id="date"></span>
+  </div>
+</div>
+
+<header class="wrap masthead">
+  <div class="logo">B<span style="color:#c91f2c">.</span></div>
+  <div>
+    <div class="brand">BROADIA <em>NEWS</em></div>
+    <div class="tagline">BROADCASTING MEDIA</div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap navlinks">
+    <a href="index.html">HOME</a>
+    <a href="#world">WORLD</a>
+    <a href="#india">INDIA</a>
+    <a href="#tamil-nadu">TAMIL NADU</a>
+    <a href="#business">BUSINESS</a>
+    <a href="#technology">TECHNOLOGY</a>
+    <a href="#entertainment">ENTERTAINMENT</a>
+    <a href="#sports">SPORTS</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="breaking">
+    <strong>NEWS DESK</strong>
+    Welcome to the official BROADIA NEWS website.
+  </div>
+
+  <section class="hero">
+    <article>
+      <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=80"
+           alt="Global connections and world map">
+      <p class="category" style="margin-top:16px">EDITOR'S NOTE</p>
+      <h1>Welcome to BROADIA NEWS</h1>
+      <p class="muted">
+        Broadcasting Media — covering stories that matter,
+        from local communities to developments around the world.
+      </p>
+      <a href="articles/welcome.html" style="color:#c91f2c;font-weight:bold">
+        Read our introduction →
+      </a>
+    </article>
+
+    <aside>
+      <h2 class="section-title">Explore the news</h2>
+      <div class="side">
+        <span class="category">WORLD</span>
+        <h3>International affairs</h3>
+        <p class="muted">Global developments and perspectives.</p>
+      </div>
+      <div class="side">
+        <span class="category">INDIA</span>
+        <h3>India in focus</h3>
+        <p class="muted">National affairs, people and public policy.</p>
+      </div>
+      <div class="side">
+        <span class="category">TECHNOLOGY</span>
+        <h3>Science and innovation</h3>
+        <p class="muted">Ideas and technologies shaping tomorrow.</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section" id="latest">
+    <h2 class="section-title">Latest stories</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=700&q=80"
+             alt="Newspapers on a desk">
+        <p class="category">NEWSROOM</p>
+        <h3>Our approach to responsible journalism</h3>
+        <p class="muted">Accuracy, context and transparency matter.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80"
+             alt="Indian architecture">
+        <p class="category">TAMIL NADU</p>
+        <h3>Stories from Tamil Nadu</h3>
+        <p class="muted">Culture, communities and developments across the state.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afabric?auto=format&fit=crop&w=700&q=80"
+             alt="Business analytics">
+        <p class="category">BUSINESS</p>
+        <h3>Business and the economy</h3>
+        <p class="muted">Enterprise, innovation and economic trends.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Browse by section</h2>
+    <div class="sections">
+      <a class="tile" id="world" href="#latest"><strong>World</strong><span>International news</span></a>
+      <a class="tile" id="india" href="#latest"><strong>India</strong><span>National news</span></a>
+      <a class="tile" id="tamil-nadu" href="#latest"><strong>Tamil Nadu</strong><span>State news</span></a>
+      <a class="tile" id="business" href="#latest"><strong>Business</strong><span>Economy and enterprise</span></a>
+      <a class="tile" id="technology" href="#latest"><strong>Technology</strong><span>Science and innovation</span></a>
+      <a class="tile" id="entertainment" href="#latest"><strong>Entertainment</strong><span>Film, arts and culture</span></a>
+      <a class="tile" id="sports" href="#latest"><strong>Sports</strong><span>Games and achievements</span></a>
+      <a class="tile" id="coimbatore" href="#latest"><strong>Coimbatore</strong><span>Local reporting</span></a>
+    </div>
+  </section>
+
+  <section class="editorial">
+    <p class="category">OUR COMMITMENT</p>
+    <h2>Report responsibly. Publish transparently.</h2>
+    <p class="muted">We aim to verify information, identify sources and correct material errors transparently.</p>
+    <a href="pages/editorial-policy.html" style="font-weight:bold">Read our editorial policy →</a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">BROADIA <em>NEWS</em></div>
+    <p style="color:#c9a45c;letter-spacing:2px">BROADCASTING MEDIA</p>
+    <p>News that connects the world.</p>
+    <p>
+      <a href="pages/about.html">About</a>
+      <a href="pages/editorial-policy.html">Editorial Policy</a>
+      <a href="pages/contact.html">Contact</a>
+    </p>
+    <p>Instagram · Facebook · YouTube — add your official links before launch.</p>
+    <hr style="border-color:#333">
+    © <span id="year"></span> BROADIA NEWS
+  </div>
+</footer>
+
+<script>
+document.getElementById('date').textContent =
+  new Intl.DateTimeFormat('en-IN', {dateStyle:'medium'}).format(new Date());
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
